@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class Battleship implements IShip{
+public class Carrier implements IShip{
 
-    private int length = 3;
+    private int length = 4;
     private Boolean alive = true;
 
     private int vPosPivot; //columns
@@ -15,7 +15,7 @@ public class Battleship implements IShip{
 
 
 
-    public Battleship(String pivotPosition) throws Exception {
+    public Carrier(String pivotPosition) throws Exception {
         positions.add(pivotPosition);
         String[] tempArray = pivotPosition.split("\\|");
         hPosPivot = Integer.parseInt(tempArray[0]);
